@@ -2,10 +2,15 @@ const calculator = document.querySelector(".calculator")
 const display = calculator.querySelector(".display p")
 const numbers = document.querySelectorAll(".calculator .number")
 const symbols = document.querySelectorAll(".calculator .symbol")
+const numpad = document.querySelectorAll(".calculator .number, .calculator .symbol")
 let values = [" ", " "]
 let operation = ""
 let errorFlag = false
 let step = false
+
+numpad.forEach(el => {
+    el.classList.add("hvr-push")
+})
 
 //Event listener for number 1-9, brackets and the dot
 numbers.forEach(number => {
