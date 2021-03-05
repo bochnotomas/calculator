@@ -9,15 +9,16 @@
 </head>
 
 <body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
     <div class="calculator">
         <div class="display">
             <p>
                 <!-- 12 digits max-->
             </p>
         </div>
-        <div class="symbol">C</div>
-        <div class="number">(</div>
-        <div class="number">)</div>
+        <div class="symbol" id="clear">C</div>
         <div class="symbol">&sol;</div>
         <div class="number">7</div>
         <div class="number">8</div>
@@ -32,9 +33,9 @@
         <div class="number">3</div>
         <div class="symbol">&plus;</div>
         <div class="number">0</div>
-        <div class="number">&period;</div>
-        <div class="symbol">&rightarrow;</div>
-        <div class="symbol">&equals;</div>
+        <div class="number" id="dot">&period;</div>
+        <div class="symbol" id="delete">&rightarrow;</div>
+        <div class="symbol" id="equals">&equals;</div>
     </div>
     <script src="app.js"></script>
 </body>
